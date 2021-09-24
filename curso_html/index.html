@@ -5,84 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Texto descritivo da pagina web" />
-    <meta name="autor" content="gama academy" />
     <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
-    <link rel="stylesheet" type="text/javascript" href="../JS/interacao.js" />
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
-    <title>Document</title>
+    <title>Projeto css Moises Neto</title>
 </head>
 
 <body>
     <header>
-aqui é o cabeçalho de navegação
+     
+        <ul>
+            <li>
+                <a target="_balnk" href="https://github.com/moisesneto23">Meu Github</a>
+            </li>
+            <li><a target="_balnk" href="https://wa.me/5575998402447">Meu watsapp</a></li>
+            <li>
+                <a target="_balnk" href="https://www.linkedin.com/in/moisesnetodeveloper/">Meu linkedin</a>
+            </li>
+        </ul>
     </header>
-    <nav>
-        aqui é a navegação lateral
-    </nav>
+
     <main>
-        aqui é o corpo principal
-        <h1>terra</h1>
-        <a href="https://www.youtube.com/" title="oqui é o que esta por tras do que você vai ver quando passar o mouse em cima, no caso essa frase">clicando aqui você vai parar no youtube</a>
-        <h2>america do sul</h2>
-        aqui vai uma imagem para clicar e viajar para outra pagina
-        <a href="" title=""><br>
-            <!-- o atributo "alt" é utilizado em imagens para as pessoas pesquisarem e cairem no seu site com esse tipo de imagem-->
-        <img src="imagens/logo.png" title="quando clicar na imagem sera redirecionado para o youtube tambem" alt="clique aqui"></a>
-        <h3>brasil</h3>
-        <video width="550" height="560" controls 
-        >vamos la<br>
-    <source src="https://www.youtube.com/watch?v=RBu2S2-qZUo" type="video"></video>
-        <h4>bahia</h4>
-        agora vai um video atraves do iframe que é uma pagina dentro da outra
-        <iframe src="https://github.com/moisesneto23/gama-no-github" width="450" height="400">
-        </iframe>
-        <h5>paripiranga</h5>
+        <section class="container">
+            <div class="name">
+                <h1>Moisés Neto</h1>
+                <h5>FullStack Developer</h5>
 
-<ul type="circle">
-    <li>item1</li>
-    <li>item2</li>
-</ul>
-<ol start="3" type="I">
-    <li>item1</li>
-    <li>item2</li>
-</ol>
-<!--lista de definição-->
-<dl>
-    <dt>palavra 1</dt>
-    <dd>explicação da palavra 1</dd>
-</dl>
+            </div>
+            <div  onclick=" displaiSaida()" id="arrow">
+                <img src="imagens/seta.png" id="animation" alt="">
+            </div>
 
-        <h6>centro</h6>
-        iniciando tabelas
-        <table class= "comBordaSimples">
-            <thead>
-                <tr>
-                    <th>mes da atividade</th>
-                    <th>nome da atividade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>janeiro</td>
-                    <td>leitura</td>
-                </tr>
-                <tr>
-                    <td>fevereiro</td>
-                    <td>meditação</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>total de atividades</td>
-                    <td>2</td>
-                </tr>
-            </tfoot>
-        </table>
+            <div style="display: none;"  id="about">
+                <p >Sou Moisés! nasci em 1995, Bacharel em Sistemas de Informação pela reconhecida rede de
+                    Ensino
+                    Ânima, campos Paripiranga, cidade onde resido desde sempre. Ja trabalhei 12 anos com fabricação e
+                    instalação
+                    de portôes automaticos e atualmente estou numa longa jornada de aperfeiçoamente para FullStack.
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor Email :)">
+                    <button> enviar</button>
+                </form>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        aqui é o rodape
-    </footer>
+    <script>
+        function displaiSaida(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rodar');
+            var display =document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

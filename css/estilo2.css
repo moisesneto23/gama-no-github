@@ -1,0 +1,29 @@
+body{
+    background-color: yellow;
+}
+header{
+    background-color: wheat;
+}
+nav{
+    background-color: teal;
+}
+main{
+    background-color:tomato;
+}
+footer{
+    background-color: turquoise;
+}
+table{
+    border: solid green 1px;
+}
+table.comBordaSimples td {
+    border: 1px solid black;
+}
+ 
+table.comBordaSimples th {
+    border: 1px solid black;
+    background: #F0FFF0;
+}
+.formu{
+    background-color: grey;
+}

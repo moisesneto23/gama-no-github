@@ -1,26 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: Poppins, sans-serif;
+}
+
+ul{
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
 body{
-    background-color: yellow;
+    background-image: url(../curso_html/imagens/ia.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+    
+}
+
+.container{
+    text-align: center;
+}
+
+.container, .name, h1{
+    font-size: 60px;
+}
+
+.container, .name, h5{
+    font-size: 25px;
+}
+
+#arrow{
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink{
+    to{
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 400ms;
+}
+
+.rodar{
+    transform:rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about, p{
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.18em;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    border: thick double #fff;
+    padding: 25px;
+}
+
+.form, input{
+ width: 50%;
+ padding: 5px 10px;
+}
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #c09717 50%, #9c551b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #464646;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+    border-radius: 3em;
+}
+.form button:hover{
+    background-position:left bottom;
+color: honeydew;
+}
+a{
+    padding: 25px;
 }
 header{
-    background-color: wheat;
+    display: flex;
+   /* border-bottom: 1px solid honeydew ;*/
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px #fff;
 }
-nav{
-    background-color: teal;
+
+header ul{
+    display: flex;
 }
-main{
-    background-color:tomato;
+header ul li a:hover{
+    color: greenyellow;
+    text-decoration: underline;
 }
-footer{
-    background-color: turquoise;
+header ul li a:hover{
+transition: 500ms;
 }
-table{
-    border: solid green 1px;
+p{
+    -webkit-text-stroke-width: 0.7px; /* largura da borda */
+    -webkit-text-stroke-color: rgb(55, 197, 126); /* cor da borda */
 }
-table.comBordaSimples td {
-    border: 1px solid black;
-}
- 
-table.comBordaSimples th {
-    border: 1px solid black;
-    background: #F0FFF0;
+
+@media only screen and (max-width:480px){
+    .container, .name, h1{
+        font-size: 20px;
+    }
+    .container, .name, h5{
+    font-size: 10px;
+    }
+
+    .about p{
+    max-width: 80%;
+    }
 }
